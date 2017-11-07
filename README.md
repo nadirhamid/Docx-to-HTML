@@ -11,6 +11,12 @@ This class requires the following:
 - [SimpleXML](http://php.net/manual/en/book.simplexml.php)
 
 
+## Composer install
+
+```
+composer require nadirhamid/docx-to-html
+```
+
 
 ###How to use
 
