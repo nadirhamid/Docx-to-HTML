@@ -1,5 +1,6 @@
 <?php
 namespace Docx_reader;
+use ZipArchive;
 
 class Docx_reader {
 
@@ -13,7 +14,7 @@ class Docx_reader {
 
     private function load($file) {
         if (file_exists($file)) {
-            $zip = new \ZipArchive();
+            $zip = new ZipArchive();
             $openedZip = $zip->open($file);
             if ($openedZip === true) {
                 //attempt to load styles:
